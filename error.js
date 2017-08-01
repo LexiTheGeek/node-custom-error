@@ -88,11 +88,15 @@ module.exports = function createError (name, parameters, Constructor) {
                 'get' : createStackDescriptor(errors, stackDescriptor)
             };
         }
-        // Always set the message manually, in case there was a default supplied
+        // Set the message manually (if custom constructor not used), in case there was a default supplied
         // format with util.format
-        properties.message = {
-            'value' : util.format.apply(null, messages)
-        };
+		
+		if(typeof this.message === 'undefined'){
+			properties.message = {
+				'value' : util.format.apply(null, messages)
+			};
+		}
+		
         // Pass in our extra properties
         Object.defineProperties(proxy, properties);
         // Replace the error prototype with our own
