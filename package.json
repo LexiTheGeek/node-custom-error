@@ -1,6 +1,6 @@
 {
   "name": "custom-error-generator",
-  "version": "7.1.0",
+  "version": "7.2.0",
   "description": "Custom errors and exceptions in Node.js",
   "main": "error.js",
   "scripts": {
@@ -18,7 +18,7 @@
       "threshold": 80
     }
   },
-  "author": "Jesse Proulx <github@jproulx.net>",
+  "author": "Alexia Hurley",
   "license": "ISC",
   "devDependencies": {
     "mocha": "",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jproulx/node-custom-error.git"
+    "url": "https://github.com/LexiTheGeek/node-custom-error.git"
   },
   "keywords": [
     "error",
@@ -41,7 +41,7 @@
     "custom error"
   ],
   "bugs": {
-    "url": "https://github.com/jproulx/node-custom-error/issues"
+    "url": "https://github.com/LexiTheGeek/node-custom-error/issues"
   },
-  "homepage": "https://jproulx.github.io/node-custom-error"
+  "homepage": "https://github.com/LexiTheGeek/node-custom-error"
 }
